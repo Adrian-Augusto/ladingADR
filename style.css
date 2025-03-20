@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kavivanar&family=Miltonian+Tattoo&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #12131a;
+    color: white;
+    padding: 10px ;
+    font-family: "Kavivanar", cursive;
+    font-style: italic;
+    text-shadow: 1px 1px 1px 1px #6d87a8;
+}
+header a:hover{
+    background-color: #ebecf5;
+    transition: color 0.1s ease;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #6d87a8;
+
+}
+
+body{
+font: 1em sans-serif;
+    
+background-color: #121212; /* preto com um leve toque de azul */
+
+}
+h1{ 
+    
+    font-family: "Kavivanar", cursive;
+    font-style: italic;
+    color: white;
+    text-shadow: 2px 2px 2px 2px #6d87a8 solid;
+    ;
+
+}
+/* Estilo do menu de navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para os itens de navegação */
+nav ul li {
+    margin: 0 20px;
+}
+
+/* Estilo dos links */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efeito de hover para os links */
+nav ul li a:hover {
+    color: #bebbba; /* Cor laranja para o efeito hover */
+}
+
+.imagem {
+    margin-top: 20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 60%; 
+     background-image: url('WhatsApp\ Image\ 2025-02-26\ at\ 19.24.37.jpeg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir o elemento */
+    background-position: center; /* Centraliza a imagem */
+}
+#p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    font-style: italic;
+    margin: 40px;
+    text-shadow: 10px 2px 2px #0053be;
+    color: white;
+    font-size: 1.2em;
+}
+
+.Container{
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens no centro vertical */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 0.1px solid #026374;
+    background-color: #6d87a8;
+}
+
+.pai {
+    align-items: center;
+    margin-right: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px; /* Largura fixa para o .pai */
+    height: 200px;
+}
+
+/* Efeitos nas divs A, B e C */
+#A, #B, #C, #D {
+    width: 100px;
+    height: 100px;
+    background-color: #d0ecea; /* Cor inicial */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px; /* Borda arredondada */
+    transition: all 0.3s ease; /* Transição suave */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#A:hover,  #C:hover {
+    background-color: #2196F3; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+}
+#B:hover{
+    background-color: #f3e521; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0px 6px 15px rgba(0, 0, 1, 0.3); /* Sombra mais forte */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+}
+#C:hover{
+    background-color: #21b8f3; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0px 6px 15px rgba(0, 0, 1, 0.3); /* Sombra mais forte */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+}
+#D:hover{
+    background-color: #faf9f9; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho */
+    box-shadow: 0px 6px 15px rgba(0, 0, 1, 0.3); /* Sombra mais forte */
+    cursor: pointer; /* Mostra o cursor de ponteiro */
+}
+
+#A > img, #B > img, #C img , #D> img {
+    margin: 2PX;
+    width: 80px; /* Ajusta o tamanho das imagens */
+    height: 80px;
+    border-radius: 50%; /* Faz as imagens ficarem arredondadas */
+        pointer-events: none; /* Impede que o usuário clique */
+        color: transparent; /* Esconde o texto */
+    
+}
+
+@media (max-width: 1600px) {
+    /* Para telas menores, como tablets ou celulares em modo paisagem */
+    .imagem {
+        width: 400px; /* Reduzindo o tamanho da imagem */
+        height: 400px;
+        
+    }
+
+    .Container {
+        flex-direction: column; /* Coloca os itens em coluna, um abaixo do outro */
+        padding: 15px;
+    }
+
+    .pai {
+        margin-right: 0; /* Remove a margem à direita */
+        width: 80%; /* Ajusta a largura para 80% */
+        height: auto; /* Deixa a altura automática para ajustes */
+        margin-top: 20px; /* Adiciona um pequeno espaço entre os itens */
+    }
+
+   
+    #A > img, #B > img, #C > img {
+        width: 60px; /* Ajusta o tamanho das imagens para telas pequenas */
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca o menu de navegação em coluna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta o espaçamento dos itens no menu */
+    }
+    .saiba-mais{
+        padding-top: 4px;
+        padding-bottom: 35px;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Media Queries para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    /* Para telas menores, como tablets ou celulares em modo paisagem */
+    .imagem {
+        width: 300px; /* Reduzindo o tamanho da imagem */
+        height: 300px;
+        
+    }
+
+    .Container {
+        flex-direction: column; /* Coloca os itens em coluna, um abaixo do outro */
+        padding: 15px;
+    }
+
+    .pai {
+        margin-right: 0; /* Remove a margem à direita */
+        width: 80%; /* Ajusta a largura para 80% */
+        height: auto; /* Deixa a altura automática para ajustes */
+        margin-top: 20px; /* Adiciona um pequeno espaço entre os itens */
+    }
+
+   
+    #A > img, #B > img, #C > img {
+        width: 60px; /* Ajusta o tamanho das imagens para telas pequenas */
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca o menu de navegação em coluna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta o espaçamento dos itens no menu */
+    }
+}
+
+/* Media Queries para telas muito pequenas (celulares em modo retrato) */
+@media (max-width: 480px) {
+    .imagem {
+        width: 250px;
+        height: 250px;
+        border-radius: 150px; 
+    }
+
+    .pai {
+        width: 100%; /* A largura do .pai ocupa 100% da tela */
+        height: 150px; /* Ajuste de altura */
+        margin-top: 20px; /* Espaço entre os itens */
+    }
+
+    #A > img, #B > img, #C > img {
+        width: 60px; /* Ajusta o tamanho das imagens para telas pequenas */
+        height: 60px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Coloca o menu de navegação em coluna */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajusta o espaçamento dos itens no menu */
+    }
+
+}
+h1{
+    font: 1em sans-serif;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Projeto{
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #f7f1f1e0; /* preto com um leve toque de azul */
+    box-shadow: #6d87a8  2px 2px 2px 2px ; 
+      border-radius: 10px;
+      
+
+
+
+}
+#p{
+    margin-left: 30px;
+    font-family: "Alfa Slab One", serif;
+    font-size: 21px;
+    text-shadow: 1px 1px 1px #12131a;
+  
+}
+.Corpo{
+    gap: 3px;
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 50px;
+    
+
+}
+h1{
+    font-family: "Alfa Slab One", serif;
+    font-size: 21px;
+    text-decoration: italic;
+    margin-bottom: 10px;
+}
+p{
+    margin-left: 30px;
+     
+    font-size: 21px;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+.Projeto {
+    margin-top: 10px;
+    gap bottom: 30px;
+    background-color: #ffffff; /* fundo escuro */
+    color: rgb(0, 0, 0); /* texto branco */
+    padding: 20px; /* espaçamento interno */
+    border-radius: 8px; /* bordas arredondadas */
+    transition: transform 0.3s, box-shadow 0.3s; /* transições suaves */
+    cursor: pointer; /* cursor de mãozinha para indicar que é interativo */
+  }
+  
+  /* Efeito hover na div */
+  .Projeto:hover {
+    transform: scale(1.05); /* aumenta ligeiramente o tamanho */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* adiciona uma sombra suave */
+  }
